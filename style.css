@@ -53,6 +53,7 @@ li a:last-child {
 
 .hero-text {
     margin-right: 1em;
+    width: 30%;
 }
 
 .hero-text h1 {
@@ -64,6 +65,7 @@ li a:last-child {
 .hero-text p {
     font-size: 1.125em;
     color: #E5E7EB;
+    overflow-wrap: break-word;
 }
 
 .hero-text button {
@@ -107,7 +109,7 @@ li a:last-child {
 .container4 {
     width: 10em;
     height: auto;
-    margin: 3em 2em 8em;
+    margin: 3em 4em 8em;
 }
 
 .container img {
@@ -174,6 +176,11 @@ li a:last-child {
     color: #fff;
     border-radius: 0.3125em;
     cursor: pointer;
+}
+
+.section-four button:active {
+    background-color: #fff;
+    color: #3882F6;
 }
 
 footer {
