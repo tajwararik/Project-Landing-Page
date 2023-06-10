@@ -176,6 +176,7 @@ li a:last-child {
     color: #fff;
     border-radius: 0.3125em;
     cursor: pointer;
+    align-self: center;
 }
 
 .section-four button:active {
@@ -191,4 +192,36 @@ footer {
     align-items: center;
     font-size: 1.125em;
     font-weight: 500;
+}
+
+@media (max-width: 1151px) and (min-width: 1000px) {
+    .hero-text {
+        width: 40%;
+        margin-right: 2em;
+    }
+
+    .hero-image img {
+        width: 31.25em;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .section-four {
+        padding: 3em;
+    }
+
+    .section-four p {
+        font-size: 1.25em;
+    }
+
+    .section-four button {
+        font-size: 1em;
+        padding: 0.25em 1em;
+    }
 }
