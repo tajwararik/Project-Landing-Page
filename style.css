@@ -8,7 +8,8 @@ body {
     font-size: 16px;
 }
 
-.section-one, footer {
+.section-one, 
+footer {
     background-color: #1F2937;
     color: #fff;
     padding: 0 8em;
@@ -77,6 +78,7 @@ li a:last-child {
     margin-top: 1em;
     border-radius: 0.3125em;
     cursor: pointer;
+    transition: all 150ms ease-in-out;
 }
 
 .hero-text button:active {
@@ -155,6 +157,7 @@ li a:last-child {
     border-radius: 0.35em;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 5em 0;
 }
 
@@ -177,6 +180,7 @@ li a:last-child {
     border-radius: 0.3125em;
     cursor: pointer;
     align-self: center;
+    transition: all 150ms ease-in-out;
 }
 
 .section-four button:active {
@@ -196,7 +200,7 @@ footer {
 
 @media (max-width: 1151px) and (min-width: 1000px) {
     .hero-text {
-        width: 40%;
+        max-width: 40%;
         margin-right: 2em;
     }
 
@@ -212,6 +216,10 @@ footer {
         margin-right: 2em;
     }
 
+    .section-three {
+        padding: 8em;
+    }
+
     .section-four {
         padding: 3em;
     }
@@ -223,5 +231,119 @@ footer {
     .section-four button {
         font-size: 1em;
         padding: 0.25em 1em;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 800px) {
+    .heading nav li a {
+        padding: 0.4em;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 2em 1em;
+    }
+
+    .section-three {
+        padding-top: 5em;
+        padding-bottom: 8em;
+        text-align: justify;
+    }
+
+    .section-four {
+        padding: 3em 1.5em;
+    }
+
+    .section-four p {
+        font-size: 1.15em;
+    }
+
+    .section-four button {
+        font-size: 1em;
+        padding: 0.25em 0.75em;
+    }
+}
+
+@media (max-width: 799px) and (min-width: 527px) {
+    .hero {
+        padding: 2em 0 2em;
+    }
+
+    .heading nav li a {
+        display: none;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 1em 3.5em;
+    }
+
+    .section-three {
+        padding: 5em 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-three blockquote {
+        font-size: 1.25em;
+    }
+
+    .section-three p {
+        font-size: 1em;
+        top: 10em;
+    }
+
+    .section-four {
+        padding: 2em 1em;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-four p {
+        font-size: 1.25em;
+        margin-bottom: 1em;
+    }
+
+    .section-four button {
+        font-size: 0.75em;
+        font-weight: 500;
+        padding: 0.25em 2em;
+    }
+
+    footer {
+        height: 3em;
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width:799px) and (min-width:618px) {
+    .section-three blockquote {
+        font-size: 1.75em;
+    }
+
+    .section-three p {
+        top: 12.275em;
     }
 }
