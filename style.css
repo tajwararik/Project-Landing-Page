@@ -8,7 +8,7 @@ body {
     font-size: 16px;
 }
 
-.section-one, 
+.section-one,
 footer {
     background-color: #1F2937;
     color: #fff;
@@ -26,6 +26,11 @@ footer {
 .heading h1 {
     font-size: 1.5em;
     color: #F9FAF8;
+}
+
+/* Displayed under 800px */
+.dropbtn {
+    display: none;
 }
 
 nav ul {
@@ -153,7 +158,7 @@ li a:last-child {
     height: auto;
     background-color: #3882F6;
     color: #F9FAF8;
-    margin: 100px auto;
+    margin: 6.25em auto;
     border-radius: 0.35em;
     display: flex;
     justify-content: space-around;
@@ -239,12 +244,13 @@ footer {
         padding: 0.4em;
     }
 
-    .hero-image img {
-        display: none;
-    }
-
     .hero-text {
         width: 100%;
+        margin: 0;
+    }
+
+    .hero-image img {
+        display: none;
     }
 
     .container1,
@@ -255,8 +261,7 @@ footer {
     }
 
     .section-three {
-        padding-top: 5em;
-        padding-bottom: 8em;
+        padding: 5em 5em 8em;
         text-align: justify;
     }
 
@@ -274,21 +279,60 @@ footer {
     }
 }
 
-@media (max-width: 799px) and (min-width: 527px) {
-    .hero {
-        padding: 2em 0 2em;
+@media (max-width: 799px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
     }
 
-    .heading nav li a {
+    .dropbtn {
+        display: block;
+        border: none;
+        background-color: #1F2937;
+        color: #F9FAF8;
+    }
+
+    .dropdown-content {
         display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f1f1f1;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #1F2937;
+        padding: 12px 16px;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .hero-image img {
         display: none;
     }
+}
+
+@media (max-width: 799px) and (min-width: 527px) {
+    .section-one {
+        padding: 0 4em;
+    }
+
+    .hero {
+        padding: 2em 0 2em;
+    }
 
     .hero-text {
         width: 100%;
+        margin: 0;
     }
 
     .container1,
@@ -315,9 +359,9 @@ footer {
     }
 
     .section-four {
-        padding: 2em 1em;
+        padding: 2em 2.5em;
         flex-direction: column;
-        align-items: flex-start;
+        margin: 3.125em auto;
     }
 
     .section-four p {
@@ -327,7 +371,6 @@ footer {
 
     .section-four button {
         font-size: 0.75em;
-        font-weight: 500;
         padding: 0.25em 2em;
     }
 
@@ -338,12 +381,78 @@ footer {
 
 }
 
-@media (max-width:799px) and (min-width:618px) {
+@media (max-width: 526px) and (min-width: 360px) {
+
+    .section-one,
+    footer {
+        padding: 0 2em;
+    }
+
+    .hero {
+        padding: 1em 0 2em;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .section-two h1 {
+        font-size: 2em;
+        padding: 1em 0.5em;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 0.75em 3em;
+    }
+
+    .section-three {
+        padding: 3em 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .section-three blockquote {
-        font-size: 1.75em;
+        font-size: 1em;
+        line-height: 1em;
     }
 
     .section-three p {
-        top: 12.275em;
+        font-size: 0.875em;
+        top: 7.95em;
+        left: 2em;
+    }
+
+    .section-four {
+        padding: 1em;
+        flex-direction: column;
+        margin: 2em auto;
+    }
+
+    .section-four p {
+        font-size: 1em;
+        margin-bottom: 0.75em;
+    }
+
+    .section-four button {
+        font-size: 0.75em;
+        padding: 0.25em 1em;
+    }
+
+    footer {
+        height: 3em;
+        font-size: 1em;
     }
 }

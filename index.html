@@ -7,23 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <main>
+        <!-- Section one starts -->
         <section class="section-one">
             <div class="heading">
+                <!-- Logo -->
                 <header>
                     <h1>Header Logo</h1>
                 </header>
+                <!-- Navbar -->
                 <nav>
-                    <ul>
-                        <li><a href="#">header link one</a></li>
-                        <li><a href="#">header link two</a></li>
-                        <li><a href="#">header link three</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <!-- Button for below 800px -->
+                        <button class="dropbtn"><span class="material-icons">
+                                menu
+                            </span></button>
+                        <ul class="dropdown-content">
+                            <li><a href="#">header link one</a></li>
+                            <li><a href="#">header link two</a></li>
+                            <li><a href="#">header link three</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
+            <!-- Hero part of section one -->
             <div class="hero">
                 <div class="hero-text">
                     <h1>This website is awesome</h1>
@@ -36,8 +47,10 @@
                 </div>
             </div>
         </section>
+        <!-- Section two starts -->
         <section class="section-two">
             <h1>Some random information.</h1>
+            <!-- Container of containers -->
             <div class="container">
                 <div class="container1">
                     <img src="./images/img1.png" alt="image">
@@ -57,11 +70,13 @@
                 </div>
             </div>
         </section>
+        <!-- Section three starts -->
         <section class="section-three">
             <blockquote>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space,
                 or maybe people will actually read it. Who knows? All I know is that it looks nice.</blockquote>
             <p>-Thor, God of Thunder</p>
         </section>
+        <!-- Section four starts -->
         <section class="section-four">
             <div>
                 <p>Call to action! It's time!</p>
@@ -71,6 +86,7 @@
                 <button type="button">Sign up</button>
             </div>
         </section>
+        <!-- Footer area -->
         <footer>
             <p>Copyright &copy; The Odin Project 2021</p>
         </footer>
