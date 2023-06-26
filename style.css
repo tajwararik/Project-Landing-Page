@@ -417,8 +417,12 @@ footer {
         margin: 0.75em 3em;
     }
 
+    .container p {
+        font-size: 0.75em;
+    }
+
     .section-three {
-        padding: 3em 1.5em;
+        padding: 3em 1.5em 5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -426,13 +430,14 @@ footer {
 
     .section-three blockquote {
         font-size: 1em;
-        line-height: 1em;
+        line-height: 1.25em;
     }
 
     .section-three p {
         font-size: 0.875em;
-        top: 7.95em;
+        padding-top: 1em;
         left: 2em;
+        bottom: 2em;
     }
 
     .section-four {
@@ -453,6 +458,6 @@ footer {
 
     footer {
         height: 3em;
-        font-size: 1em;
+        font-size: 0.75em;
     }
 }
